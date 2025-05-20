@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <h1 class="mb-4">Sistema Educativo</h1>
+        <p class="lead">Gestión de Profesores, Estudiantes y Cursos</p>
+        
+        <div class="d-grid gap-3 mt-5">
+            <a href="{% url 'agregar_profesor' %}" class="btn btn-primary btn-lg">Agregar Profesor</a>
+            <a href="{% url 'agregar_estudiante' %}" class="btn btn-success btn-lg">Agregar Estudiante</a>
+            <a href="{% url 'agregar_curso' %}" class="btn btn-info btn-lg">Agregar Curso</a>
+            <a href="{% url 'buscar_estudiante' %}" class="btn btn-warning btn-lg">Buscar Estudiante</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
